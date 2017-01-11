@@ -1,5 +1,4 @@
 # exercise 4
-# ism 2
 
 noun = raw_input("Enter a noun, please.")
 verb = raw_input("Enter a verb, please.")
