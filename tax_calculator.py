@@ -58,7 +58,6 @@ states = {
         'WY': 'Wyoming'
 }
 
-
 amount = raw_input("What is the order amount?")
 state = raw_input("What is the state?")
 
@@ -66,18 +65,19 @@ amount = float(amount)
 
 md_tax = 0.06
 md_tax = float(md_tax)
+print("{:3f} ".format(md_tax))
 md_amount = md_tax * amount
 md_amount = float(md_amount)
 
 amount = str(amount)
 
-amount = repr(amount)
+amount = print("{:5f} ".format(amount))
 
 md_tax = str(md_tax)
 
-md_amount = str(md_amount) 
+md_amount = str(md_amount)
 
-md_amount = repr(md_amount)
+md_amount = (print"{5f} ".format(md_amount))
 
 
 if state == 'MD':
@@ -85,7 +85,9 @@ if state == 'MD':
     print("the tax is $" + md_tax + ". ")
     print("the total is $" + md_amount +". ")
 
-if state != 'MD':
+else:
     print("The subtotal is $" + amount + ". ")
     print("The tax is $0.00. ")
     print("The total is $" + amount + ". ")
+
+
