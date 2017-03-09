@@ -1,17 +1,17 @@
 import math
 #def circle():
-#	ask "What is the Radius?"
-#	PI = 3.14159
-#	area_of_ceiling = float(2 * PI * radius^2)
+#   ask "What is the Radius?"
+#   PI = 3.14159
+#   area_of_ceiling = float(2 * PI * radius^2)
 
 def rectangle():
     numerical = False
     while numerical == False:
         try:
             length = int(input("What is the length? "))
-	    numerical = True
-	except:
-	    print("Input must be an integer. Please try again.")
+            numerical = True
+        except:
+            print("Input must be an integer. Please try again.")
 
     numerical = False
     while numerical == False:
@@ -30,9 +30,9 @@ def rectangle():
 answer = False
 choice = raw_input("Circle or Rectangle?")
 while answer == False:
-	if choice == "circle":
-		answer = True
-		circle()
-	elif choice == "rectangle":
-		answer = True
-		rectangle()
+    if choice == "circle":
+        answer = True
+        circle()
+    elif choice == "rectangle":
+        answer = True
+        rectangle()
